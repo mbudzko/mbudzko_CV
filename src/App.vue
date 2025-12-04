@@ -9,11 +9,11 @@ const jobs = [
   {
     title: 'Staar Surgical',
     position: 'Senior Software Engineer',
-    description: 'Fullstack development of multiple projects.',
+    description: 'Fullstack development across multiple projects, mainly focused on maintaining and improving the main product made up of several web applications. Tasks include working on frontend architecture, adding new features, and coordinating with other teams. Also responsible for creating and updating internal tools to support daily operations. Work involves regular collaboration with the customer service team to handle user issues, improve workflows, and keep the product stable.',
     startDate: 'June 2024',
     endDate: 'Current',
     linkedinLink: 'https://www.linkedin.com/company/staar-surgical',
-    type: 'Part Time',
+    type: 'Full Time',
   },
   {
     title: 'Lambda Factor',
@@ -68,7 +68,7 @@ const jobs = [
           SUMMARY
         </h3>
         <p>
-          Dedicated Frontend Engineer with over 5 years of hands-on experience specializing in Vue.js, proficient in both Composition and Options APIs. Possesses a strong aptitude for problem-solving, consistently delivering innovative solutions to complex challenges. Known for exemplary work ethic and adeptness in collaborating within team environments. Experienced in diverse project landscapes encompassing various architectural paradigms. Demonstrates a keen ability to adapt and thrive in dynamic work settings while maintaining a high standard of quality and efficiency.
+          Frontend Engineer with over 6 years of experience working with Vue.js, using both the Composition and Options APIs. I enjoy solving problems and finding practical, creative solutions to complex tasks. I’m known for being reliable, easy to work with, and comfortable collaborating in different team setups. I’ve worked on a wide range of projects with various architectures, and I adapt quickly to new environments while keeping quality and efficiency high.
         </p>
       </section>
 
@@ -79,17 +79,22 @@ const jobs = [
         <ul>
           <li>
             <p>
-              Spearheaded numerous significant migrations from Vue 2 to Vue 3, demonstrating adeptness in navigating transitions between versions and ensuring seamless continuity in project development and functionality.
+              Successfully led several major migrations from Vue 2 to Vue 3, managing the transition smoothly and ensuring the projects continued to run reliably throughout the process.
             </p>
           </li>
           <li>
             <p>
-              Led a team of frontend developers, providing guidance, mentorship, and fostering a collaborative environment conducive to innovation and productivity.
+              Guided and mentored a team of frontend developers, helping them grow while fostering a supportive and productive environment.
             </p>
           </li>
           <li>
             <p>
-              Owned a critical module within projects, showcasing autonomy, responsibility, and a thorough understanding of project components and dependencies.
+              Took full ownership of a critical module, demonstrating independence, accountability, and a deep understanding of the project’s architecture and dependencies.
+            </p>
+          </li>
+          <li>
+            <p>
+              Designed and implemented a key backup system to keep services operational and protect data during offline periods throughout a major migration.
             </p>
           </li>
         </ul>
@@ -122,6 +127,7 @@ const jobs = [
         </div>
       </section>
 
+      <br>
       <section>
         <h3>
           Experience
@@ -158,7 +164,7 @@ const jobs = [
       </section>
     </div>
     <div class="secondary-info ta-start">
-      <div>
+      <div class="secondary-info__content">
         <h4>
           Contacts
         </h4>
@@ -272,7 +278,7 @@ a {
 }
 
 .remark {
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -289,6 +295,29 @@ a {
     padding: 1rem 0;
     position: relative;
     bottom: 0;
+    transform: scale(0.7);
+  }
+}
+
+@media print {
+  .secondary-info {
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: 0;
+    margin-left: 5rem;
+    padding: 0;
+    height: auto;
+    &__content {
+      transform: scale(0.7);
+    }
+  }
+
+  .remark {
+    display: flex;
+    align-self: end;
+    transform: scale(0.8);
+    flex-direction: column;
   }
 }
 </style>
